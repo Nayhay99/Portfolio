@@ -82,7 +82,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="/pdf/Nayonika-2023.pdf"
+                href="/pdf/Nayonika_Portfolio_Resume.pdf"
                 target="_blank"
                 download
                 onClick={() => updateExpanded(false)}
