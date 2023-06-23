@@ -2,11 +2,39 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
+  AiFillLinkedin,
+  AiOutlineMail,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-
+function getSocials(){
+  let socials = [
+    
+    {
+      "platform" : "Linkedin",
+      "icon" : <AiFillLinkedin/>,
+      "link": "https://linkedin.com/in/nayonika-mohapatra-65592614b/"
+    },
+    {
+      "platform" : "Github",
+      "icon" : <AiFillGithub/>,
+      "link": "https://github.com/Nayhay99"
+    },
+    {
+      "platform" : "Email",
+      "icon" : <AiOutlineMail/>,
+      "link": "mailto: nayonika99@outlook.com"
+    }
+  ]
+  return socials.map((social) => {
+    return (
+      <li className="social-icons">
+       <a href={social.link} style={{color:"white"}} target="_blank" 
+       rel="noopener noreferrer">
+        {social.icon}
+       </a>
+      </li>
+    )
+  })
+}
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
@@ -14,53 +42,14 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Soumyajit Behera</h3>
+          <h3>Developed by Nayonika Mohapatra</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SB</h3>
+          <h3>Copyright © {year} Nayonika</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://twitter.com/Soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/soumyajit4419/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
+            {getSocials()}
           </ul>
         </Col>
       </Row>

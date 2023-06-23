@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgba(112, 218, 218, 0.582),
+    rgba(151, 126, 251, 0.904)
   );
 
   --image-gradient: linear-gradient(
@@ -11,10 +12,12 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  /* --imp-text-color: #0bd164; */
+  /* --imp-text-color: #00FA9A; */
+  --imp-text-color:#ffe6cc
 }
 
-.purple {
+.details {
   color: var(--imp-text-color) !important;
 }
 
@@ -257,26 +260,28 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  /* background-color: #233554; */
+  background-image: var(--section-background-color) !important;
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
+  /* background-position: top center;
+  background-repeat: no-repeat; */
+  padding-bottom: 250px !important;
+  padding-top: -250px !important; 
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 10rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
 }
 
 .heading {
-  font-size: 2.4em !important;
+  font-size: 1.4em !important;
   padding-left: 50px !important;
 }
 
 .heading-name {
-  font-size: 2.5em !important;
+  font-size: 5.5em !important;
   padding-left: 45px !important;
 }
 
@@ -307,7 +312,7 @@ button:focus {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  padding-top: 12em !important;
 }
 
 @media (max-width: 767px) {
@@ -321,6 +326,9 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  /* background-image: var(--section-background-color) !important; */
+  
+  /* background-color: #36568e; */
 }
 
 .home-about-description {
@@ -446,21 +454,23 @@ button:focus {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 100px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  /* background-image: var(--section-background-color) !important; */
 }
 
 .project-card {
-  padding-top: 50px !important;
+  text-align: left;
+  padding: 15px;
+  /* padding-top: 50px !important;
   padding-bottom: 50px !important;
   padding-left: 25px !important;
-  padding-right: 25px !important;
+  padding-right: 25px !important; */
   height: auto !important;
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  /* box-shadow: 0 4px 5px 3px white !important; */
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -470,7 +480,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 1px 1px 1px white !important;
 }
 
 .blog-card {
@@ -546,7 +556,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  /* background-image: var(--section-background-color) !important; */
   color: white !important;
 }
 
@@ -606,7 +616,7 @@ button:focus {
   position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  /* background-image: var(--section-background-color) !important; */
   color: white !important;
 }
 
