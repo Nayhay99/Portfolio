@@ -4,7 +4,7 @@ import './Skills.css'
 class Skills extends Component {
 
     getSkills(){
-        var skills = ["Golang","JavaScript", "Typescript","Node.js","GraphQL","HTML", "C++", "C","Java","MongoDB", "SQL", "Git", "ReactJS", "ReduxJS", "GCP","PCF", "Docker","Kubernetes"]
+        var skills = ["Go","JavaScript", "Typescript","Node.js","GraphQL","HTML","CSS","SASS","C++", "C","C#","Java","MongoDB", "SQL", "Git", "ReactJS", "Redux", "GCP","PCF", "Docker","Kubernetes","Bash","Linux"]
         return skills.map((item) => <li>{item}</li>)
     }
     render() {
