@@ -15,7 +15,7 @@ function getProjectList () {
     "repo" : "Hostel-Management"
   },{
     "title" : "E-commerce Website",
-    "tech" : "ReactJS | MongoDB | GraphQl |Firebase",
+    "tech" : "ReactJS | MongoDB | GraphQL |Firebase",
     "desc" : "React powered dummy e-commerce platform with firebase authentication and stripe payment integration",
     "repo" : "e-commerce-platform"
   }]

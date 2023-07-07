@@ -40,7 +40,7 @@ function getJobsList() {
   const jobsJSX = jobs.map((job) => {
     return (
       <li>
-        <span className="details">{`${job.role}@${job.company}`}</span>
+        <span className="details">{`${job.role} @ ${job.company}`}</span>
         <span className="float-end details">{job.time}</span>
         <ul>
           {job.work.map((item) => <li>{item}</li>)}
