@@ -4,6 +4,24 @@ import './Experience.css'
 function getJobsList() {
   let jobs = [
     {
+      "company" : "PhonePe",
+      "role" : "Software Engineer",
+      "time" : "Nov 2023 - Present",
+      "work" : [
+        "Building Indus AppStore"
+      ]
+    },    {
+      "company" : "Amazon India",
+      "role" : "Application Engineer",
+      "time" : "Aug 2023 - Nov 2023",
+      "work" : [
+        "Associated with Amazon Retail Business Sector(RBS-Tech) - developing and stabilizing an intelligent,cloud-based work management platform with real-time work allocation and accurate measurement of operational KPIs.",
+        "Working to ensure platform compatibility with other tools in the Amazon Ecosystem.",
+        "Writing APIs primarily in Java and typescript while leveraging AWS products.",
+        "Conducting routine code troubleshooting and debugging to ensure smooth software functionality"
+      ]
+    },
+    {
       "company" : "Dell Technologies",
       "role" : "SDE 1",
       "time":"Aug 2021 - Oct 2022",
